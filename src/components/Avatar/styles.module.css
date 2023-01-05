@@ -1,0 +1,27 @@
+.wrapper {
+  --presence-color: black;
+  position: relative;
+}
+
+.wrapper img {
+  border-radius: 8px;
+  border: 2px solid var(--presence-color);
+}
+
+.tooltip {
+  padding: 0.75rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(100% + 0.5rem);
+  background-color: black;
+  border-radius: 8px;
+  border: 2px solid var(--presence-color);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms;
+}
+
+.wrapper:hover .tooltip {
+  opacity: 1;
+}

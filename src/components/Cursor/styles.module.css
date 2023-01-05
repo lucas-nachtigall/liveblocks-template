@@ -1,0 +1,26 @@
+.cursor {
+  --x: 0px;
+  --y: 0px;
+  --presence-color: black;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 100ms linear;
+  transform: translate(var(--x), var(--y));
+  line-height: 0;
+  pointer-events: none;
+}
+
+.cursorName {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  padding: 0.25rem;
+  background-color: black;
+  color: white;
+  border: 2px solid var(--presence-color);
+  font-weight: 700;
+  border-radius: 0.5rem;
+  line-height: 1em;
+}
